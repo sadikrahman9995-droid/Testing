@@ -30,7 +30,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(addr)
 
-app = ApplicationBuilder().token(os.getenv("BOT_TOKEN")).build()
+app = ApplicationBuilder().token(os.getenv("8792126060:AAHbKcaY6tGD8GKFzqda74Sxszk1tXD99Q4")).build()
 app.add_handler(CommandHandler("start", start))
 
 app.run_polling()
